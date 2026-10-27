@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Merci — Périnéa</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    var c = null; try { c = localStorage.getItem('perinea-consent'); } catch (e) {}
+    var v = c === 'grant' ? 'granted' : 'denied';
+    gtag('consent', 'default', { ad_storage: v, ad_user_data: v, analytics_storage: v, ad_personalization: 'denied' });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXXX', { allow_ad_personalization_signals: false });
+    // Conversion « Demande de rappel » : remplacer par l'étiquette fournie par Google Ads.
+    gtag('event', 'conversion', { send_to: 'AW-XXXXXXXXXX/YYYYYYYYYYYYYYYYYYY' });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top__in">
+      <a href="index.html" class="logo"><svg class="logo__mark" viewBox="0 0 40 32" aria-hidden="true"><use href="#lotus"/></svg><span>Périnéa</span></a>
+    </div>
+  </header>
+  <main class="thanks">
+    <div class="wrap">
+      <span class="headset"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9"/></svg></span>
+      <h1>Votre entretien <em>est réservé&nbsp;!</em></h1>
+      <p>Vous allez recevoir une confirmation par courriel. Un rappel vous sera envoyé par WhatsApp et par courriel avant le rendez-vous.</p>
+      <p>À l'heure prévue, un membre de l'équipe Périnéa vous appelle pour 30 minutes. Pour déplacer ou annuler, utilisez le lien du courriel de confirmation.</p>
+      <a class="btn btn--ghost" href="index.html">Retour à la page d'accueil</a>
+    </div>
+  </main>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="lotus" viewBox="0 0 40 32">
+      <path fill="currentColor" d="M20 2c3.6 3.4 5.4 7.4 5.4 11.6 0 5-2.4 9.3-5.4 12.4-3-3.1-5.4-7.4-5.4-12.4C14.6 9.4 16.4 5.4 20 2Z"/>
+      <path fill="currentColor" opacity=".78" d="M2 11c6 .2 10.8 2.6 13.6 6.8 1.6 2.4 2.6 5.3 3 8.2C11 25.8 4.4 20 2 11Zm36 0c-6 .2-10.8 2.6-13.6 6.8-1.6 2.4-2.6 5.3-3 8.2C29 25.8 35.6 20 38 11Z"/>
+      <path fill="currentColor" opacity=".5" d="M7 27.5c4.2 1.6 8.6 2.2 13 2.2s8.8-.6 13-2.2c-4 2.8-8.4 4-13 4s-9-1.2-13-4Z"/>
+    </symbol>
+  </svg>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Maquettes reçues du client (non publiques)
+*.jpeg
+*.jpg
+
+node_modules/
+.DS_Store
+Thumbs.db
