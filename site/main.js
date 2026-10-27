@@ -238,11 +238,19 @@ function onBooked(payload) {
   }).catch(() => {}).finally(() => { location.href = 'merci.html'; });
 }
 
-// La barre d'action mobile disparaît pendant que la visiteuse remplit le questionnaire
+// La barre d'action mobile n'apparaît qu'une fois les boutons du haut dépassés,
+// et disparaît pendant que la visiteuse remplit le questionnaire
 const mbar = document.querySelector('.mbar');
 if (mbar && 'IntersectionObserver' in window) {
-  new IntersectionObserver(([entry]) => mbar.classList.toggle('is-off', entry.isIntersecting))
-    .observe(document.getElementById('entretien'));
+  const visible = new Set();
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => (e.isIntersecting ? visible.add(e.target) : visible.delete(e.target)));
+    mbar.classList.toggle('is-off', visible.size > 0);
+  });
+  io.observe(document.querySelector('.hero__cta'));
+  io.observe(document.getElementById('entretien'));
+} else if (mbar) {
+  mbar.classList.remove('is-off');
 }
 
 showStep(0);

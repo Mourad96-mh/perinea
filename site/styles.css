@@ -333,8 +333,8 @@ section[id], #parcours { scroll-margin-top: 84px; }
   .tech, .fit, .field-row { grid-template-columns: 1fr; }
   .booking__widget { margin-inline: -16px; }
   .step-nav { flex-direction: column-reverse; }
-  .mbar { transition: transform .25s ease; }
-  .mbar.is-off { transform: translateY(110%); }
+  .mbar { transition: transform .25s ease, visibility .25s; }
+  .mbar.is-off { transform: translateY(110%); visibility: hidden; }
   .tech__card, .fit__card { padding: 24px; }
   .benefits { grid-template-columns: 1fr; gap: 10px; }
   .top__tel small { display: none; }
@@ -343,13 +343,24 @@ section[id], #parcours { scroll-margin-top: 84px; }
   .consent-bar { flex-direction: column; align-items: stretch; bottom: 86px; }
   .consent-bar__btns .btn { flex: 1; }
   .mbar {
-    display: grid; grid-template-columns: auto 1fr; gap: 10px; position: fixed; z-index: 40; left: 0; right: 0; bottom: 0;
-    padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .97); border-top: 1px solid var(--line);
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); gap: 10px; align-items: center;
+    position: fixed; z-index: 45; left: 0; right: 0; bottom: 0;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -10px 30px -12px rgba(20, 33, 94, .25);
   }
-  .mbar a { min-height: 50px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; gap: .45rem; font-weight: 700; text-decoration: none; }
-  .mbar__call { padding: 0 1.2rem; border: 2px solid #cfd6f0; color: var(--navy); }
-  .mbar__call svg { width: 18px; height: 18px; fill: currentColor; }
-  .mbar__cta { background: var(--rose); color: #fff; }
+  .mbar a {
+    min-height: 50px; padding: 0 12px; border-radius: 999px; box-sizing: border-box;
+    display: flex; align-items: center; justify-content: center; gap: .45rem;
+    font: 700 .95rem/1 var(--sans); white-space: nowrap; overflow: hidden; text-decoration: none;
+  }
+  .mbar__call { border: 2px solid #cfd6f0; color: var(--navy); background: #fff; }
+  .mbar__call svg { flex: none; width: 18px; height: 18px; fill: currentColor; }
+  .mbar__cta { background: var(--rose); color: #fff; box-shadow: 0 8px 18px -10px rgba(224, 55, 95, .8); }
+}
+@media (max-width: 379px) {
+  .mbar { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 8px; }
+  .mbar a { padding: 0 8px; }
+  .mbar__long { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
