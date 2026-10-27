@@ -12,7 +12,7 @@ Every value the client must supply is wrapped in a yellow `<span class="todo">` 
 | Testimonials "Sophie, 48 ans", "Claire, 52 ans" | Removed (commented slot in `index.html`) | Misrepresentation: fake or unverifiable reviews. Re-add only real ones, with written consent, no health-outcome promises. |
 | Anatomical / vulva-like pink illustration | Replaced by an abstract lotus | Sexual content: imagery resembling genitalia gets health ads disapproved. |
 | "Et si votre périnée était au cœur de vos fuites urinaires ?" | Used the softer mockup-3 headline; leaks only mentioned in a neutral educational block | Personal hardships / sensitive health targeting. |
-| No price, no business identity | FAQ price answer + footer legal ID + T&C page | Misrepresentation: clear business info and payment model are required. |
+| No business identity | Footer legal ID + T&C page (price deliberately left off the site, given on the call) | Misrepresentation: clear business info and payment model are required. |
 
 ## Already in place
 
@@ -20,7 +20,7 @@ Every value the client must supply is wrapped in a yellow `<span class="todo">` 
 - Privacy policy written for Quebec's Law 25 (privacy officer, retention, rights, cookies).
 - Cookie banner: Consent Mode v2, everything denied by default. `ad_personalization` is always denied (no remarketing on a health topic).
 - The questionnaire asks about the visitor's situation (postpartum, menopause, sport…), never symptoms or diagnosis. Answers go only to the client's webhook and Calendly; **no answer is ever sent to Google** (conversions carry no parameters). Keep it that way: no enhanced conversions with questionnaire data.
-- Price shown openly (2,995 $ CA, offer section + FAQ + terms) and payment model explained (Stripe link after the call, nothing charged on the site).
+- No price on the site (client decision, 2026-10-27): the price is given during the information call and confirmed in writing before payment; nothing is charged on the site.
 - Separate consent for WhatsApp/e-mail reminders (Meta requires opt-in).
 - Clear statements that the call is not a medical consultation, results vary, and no guarantee is made.
 - Contraindications and "talk to your doctor" block.
