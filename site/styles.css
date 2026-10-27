@@ -70,6 +70,8 @@ p:last-child { margin-bottom: 0; }
 .top__in { display: flex; align-items: center; justify-content: space-between; height: 68px; }
 .logo { display: inline-flex; align-items: center; gap: .55rem; text-decoration: none; color: var(--navy); font: 400 1.85rem/1 var(--serif); }
 .logo__mark { width: 34px; height: 28px; color: var(--rose); }
+.logo__img { height: 50px; width: auto; }
+.foot .logo__img { height: 64px; }
 .logo--light { color: #fff; }
 .top__tel { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--navy); font-weight: 700; }
 .top__tel svg { width: 36px; height: 36px; padding: 8px; border-radius: 50%; background: var(--rose-soft); fill: var(--rose); }
@@ -101,8 +103,7 @@ p:last-child { margin-bottom: 0; }
     radial-gradient(ellipse 30% 46% at 70% 50%, rgba(246, 184, 200, .45), transparent 70%),
     radial-gradient(ellipse 46% 26% at 50% 30%, rgba(251, 211, 221, .6), transparent 70%);
 }
-.hero__lotus { position: relative; width: 120px; color: var(--rose); }
-.hero__name { position: relative; font: 400 clamp(3rem, 5vw, 4.2rem)/1 var(--serif); color: var(--navy); }
+.hero__logo { position: relative; width: min(100%, 300px); height: auto; }
 
 .benefits { list-style: none; padding: 0; margin-top: 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .benefits li { display: flex; align-items: center; gap: .8rem; }
