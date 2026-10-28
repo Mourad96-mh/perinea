@@ -110,6 +110,7 @@ p:last-child { margin-bottom: 0; }
 .benefits p { margin: 0; font-size: .9rem; line-height: 1.35; color: var(--muted); }
 .benefits b { color: var(--navy); display: block; }
 .ico { flex: none; width: 48px; height: 48px; border-radius: 50%; background: var(--rose-soft); display: grid; place-items: center; }
+.ico { font-size: 22px; line-height: 1; }
 .ico svg { width: 22px; height: 22px; fill: none; stroke: var(--rose); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
 /* Stacked pink panels */
@@ -147,6 +148,7 @@ p:last-child { margin-bottom: 0; }
 .phases__ico svg { width: 36px; height: 36px; fill: none; stroke: var(--blue); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .phases h3 { text-transform: uppercase; letter-spacing: .06em; font-size: .9rem; color: var(--blue); }
 .phases p { color: var(--muted); font-size: .92rem; margin-top: .35rem; }
+.phases__months { display: block; margin-top: .3rem; font-size: .8rem; font-weight: 700; color: var(--rose); }
 .year { display: flex; align-items: center; gap: 12px; max-width: 760px; margin: 28px auto 0; font-size: .78rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
 .year i { flex: 1; height: 6px; border-radius: 99px; background: linear-gradient(90deg, #f7b6c6, var(--rose) 50%, var(--blue)); }
 .year__note { margin: .8rem 0 0; font-weight: 500; color: var(--navy); }

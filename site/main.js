@@ -207,7 +207,7 @@ function openCalendar() {
         // Questions de l'événement Calendly, dans cet ordre : 1. cellulaire WhatsApp, 2. notes
         customAnswers: {
           a1: lead.telephone,
-          a2: `Situation : ${lead.situation} · Déjà essayé : ${lead.deja_essaye.join(', ')} · Commencer : ${lead.delai}`
+          a2: `Souhaite découvrir : ${lead.situation} · Déjà essayé : ${lead.deja_essaye.join(', ')} · Commencer : ${lead.delai}`
         }
       },
       utm: {
