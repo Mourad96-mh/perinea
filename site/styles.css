@@ -123,16 +123,6 @@ p:last-child { margin-bottom: 0; }
 .panel--center, .center { text-align: center; }
 .panel__sub { color: var(--muted); margin: .7rem auto 0; max-width: 40rem; text-align: center; }
 
-.tech { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 860px; margin: 32px auto 0; text-align: left; }
-.tech__item { display: flex; gap: 18px; align-items: center; }
-.tech__item + .tech__item { border-left: 2px solid #f3b4c4; padding-left: 28px; }
-.tech__item h3 { font: 400 1.6rem/1.1 var(--serif); color: var(--rose); margin-bottom: .3rem; }
-.tech__item p { color: var(--muted); margin: 0; }
-.wave { flex: none; width: 72px; height: 72px; border-radius: 50%; display: grid; place-items: center; background: #fff; box-shadow: 0 0 0 10px rgba(224, 55, 95, .08); }
-.wave svg { width: 32px; height: 32px; fill: none; stroke: var(--rose); stroke-width: 1.8; stroke-linecap: round; }
-.wave--blue svg { stroke: var(--blue); }
-.wave--blue { box-shadow: 0 0 0 10px rgba(13, 63, 174, .08); }
-
 .motiv { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; }
 .motiv__lead { margin-top: 1.1rem; color: var(--rose-deep); font-size: 1.08rem; }
 .motiv__lead strong { font-weight: 500; }
@@ -297,8 +287,6 @@ section[id], #parcours { scroll-margin-top: 84px; }
   .benefits li { flex-direction: column; text-align: center; padding: .6rem .4rem; gap: .5rem; }
   .benefits p { font-size: .82rem; }
   .panel { padding: 26px 20px; }
-  .tech { grid-template-columns: 1fr; }
-  .tech__item + .tech__item { border-left: 0; border-top: 1px solid #f3b4c4; padding: 20px 0 0; }
   .phases { gap: 6px; }
   .phases li:not(:last-child)::after { right: -10px; top: 56px; font-size: 1rem; }
   .phases__ico { width: 56px; height: 56px; margin: 8px auto 10px; }
